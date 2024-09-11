@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Revolutionizing Liver Care</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+    <style>
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+        .column label, .column input, .column select {
+            display: block;
+            width: 100%;3
+            margin-bottom: 10px;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+        }
+    </style>
+  <!-- Favicons -->
+  <link href="/static/assets/img/favicon.png" rel="icon">
+  <link href="/static/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <a href="index.html" class="hero-logo" data-aos="zoom-in"><img src="/static/assets/img/Liver-Protect.png" alt=""></a>
+      <h1 data-aos="zoom-in">Welcome To LiverCare</h1>
+      <h2 data-aos="fade-up">Unveil Your Future: Discover Your Risk for Liver Cirrhosis Today!</h2>
+      <a data-aos="fade-up" data-aos-delay="200" href="#about" class="btn-get-started scrollto">Get Started</a>
+    </div>
+  </section>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="index.html"><img src="/static/assets/img/logo.png" alt="" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto " href="#prediction">Prediction</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Us</h2>
+          <p>Wanna know a Little bit about us ?</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="image">
+              <img src="/static/assets/img/about.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <div class="content pt-4 pt-lg-0 pl-0 pl-lg-3 ">
+              <h3>Hello There :)</h3>
+              <p class="fst-italic">
+                We are passionate computer science engineering students with a shared enthusiasm for machine learning and predictive modeling. Driven by our curiosity and dedication, we embarked on a journey to develop an innovative model for predicting liver cirrhosis risks. Our collaborative effort blends cutting-edge technology with a deep commitment to improving healthcare outcomes. Through rigorous research and iterative refinement, we aim to empower individuals with personalized insights into their health, paving the way for a healthier future.
+              </p>
+              <ul>
+                <li><i class="bx bx-check-double"></i> Harnessing the power of machine learning to advance medical diagnostics.</li>
+                <li><i class="bx bx-check-double"></i> Combining our academic rigor with practical application in healthcare technology.</li>
+                <li><i class="bx bx-check-double"></i> Committed to continuous learning and innovation in predictive modeling.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Liver Cirrhosis Prediction Section ======= -->
+<section id="prediction" class="prediction">
+    <div class="container">
+        <div class="section-title" data-aos="fade-up">
+            <h2>Unveil Your Future: Discover Your Risk for Liver Cirrhosis Today!</h2>
+            <p>Enter your details to get a personalized risk assessment.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2" data-aos="fade-left">
+                <div class="content pt-4 pt-lg-0">
+                    <form action="/submit" method="post">
+                        <div class="form-container">
+                            <div class="column">
+                                <label for="age">Age:</label>
+                                <input type="number" id="age" name="Age" value="38" required>
+                
+                                <label for="gender">Gender:</label>
+                                <select id="gender" name="Gender" required>
+                                    <option value="female">female</option>
+                                    <option value="male">male</option>
+                                </select>
+                
+                                <label for="place">Place (location where the patient lives):</label>
+                                <select id="place" name="Place(location where the patient lives)" required>
+                                    <option value="rural">rural</option>
+                                    <option value="urban">urban</option>
+                                </select>
+                
+                                <label for="duration">Duration of alcohol consumption (years):</label>
+                                <input type="number" id="duration" name="Duration of alcohol consumption(years)" value="16" required>
+                
+                                <label for="quantity">Quantity of alcohol consumption (quarters/day):</label>
+                                <input type="number" id="quantity" name="Quantity of alcohol consumption (quarters/day)" value="1" required>
+                
+                                <label for="type">Type of alcohol consumed:</label>
+                                <select id="type" name="Type of alcohol consumed" required>
+                                    <option value="country">country liquor</option>
+                                    <option value="branded">branded liquor</option>
+                                    <option value="both">both</option>
+                                </select>
+                
+                                <label for="hepB">Hepatitis B infection:</label>
+                                <select id="hepB" name="Hepatitis B infection" required>
+                                    <option value="negative">negative</option>
+                                    <option value="positive">positive</option>
+                                </select>
+                
+                                <label for="hepC">Hepatitis C infection:</label>
+                                <select id="hepC" name="Hepatitis C infection" required>
+                                    <option value="negative">negative</option>
+                                    <option value="positive">positive</option>
+                                </select>
+                
+                                <label for="diabetes">Diabetes Result:</label>
+                                <select id="diabetes" name="Diabetes Result" required>
+                                    <option value="NO">NO</option>
+                                    <option value="YES">YES</option>
+                                </select>
+                
+                                <label for="bloodPressure">Blood pressure (mmHg):</label>
+                                <input type="text" id="bloodPressure" name="Blood pressure (mmhg)" value="116/70" required>
+                
+                                <label for="obesity">Obesity:</label>
+                                <select id="obesity" name="Obesity" required>
+                                    <option value="no">no</option>
+                                    <option value="yes">yes</option>
+                                </select>
+                
+                                <label for="familyHistory">Family history of cirrhosis/hereditary:</label>
+                                <select id="familyHistory" name="Family history of cirrhosis/ hereditary" required>
+                                    <option value="no">no</option>
+                                    <option value="yes">yes</option>
+                                </select>
+                            </div>
+                
+                            <div class="column">
+                                <label for="tch">TCH:</label>
+                                <input type="number" id="tch" name="TCH" value="176" required>
+                
+                                <label for="tg">TG:</label>
+                                <input type="number" id="tg" name="TG" value="160" required>
+                
+                                <label for="ldl">LDL:</label>
+                                <input type="number" id="ldl" name="LDL" value="108" required>
+                
+                                <label for="hdl">HDL:</label>
+                                <input type="number" id="hdl" name="HDL" value="36" required>
+                
+                                <label for="hemoglobin">Hemoglobin (g/dl):</label>
+                                <input type="number" step="0.1" id="hemoglobin" name="Hemoglobin  (g/dl)" value="15" required>
+                
+                                <label for="pcv">PCV (%):</label>
+                                <input type="number" id="pcv" name="PCV  (%)" value="35" required>
+                
+                                <label for="rbc">RBC (million cells/microliter):</label>
+                                <input type="number" step="0.1" id="rbc" name="RBC" value="5.5" required>
+                
+                                <label for="mcv">MCV (femtoliters/cell):</label>
+                                <input type="number" id="mcv" name="MCV   (femtoliters/cell)" value="86" required>
+                
+                                <label for="mch">MCH (picograms/cell):</label>
+                                <input type="number" id="mch" name="MCH" value="32" required>
+                
+                                <label for="mchc">MCHC (grams/deciliter):</label>
+                                <input type="number" step="0.1" id="mchc" name="MCHC" value="33" required>
+                
+                                <label for="totalCount">Total Count:</label>
+                                <input type="number" id="totalCount" name="Total Count" value="6000" required>
+                
+                                <label for="polymorphs">Polymorphs (%):</label>
+                                <input type="number" step="0.1" id="polymorphs" name="Polymorphs  (%) " value="70" required>
+                
+                                <label for="lymphocytes">Lymphocytes (%):</label>
+                                <input type="number" step="0.1" id="lymphocytes" name="Lymphocytes  (%)" value="25" required>
+                            </div>
+                
+                            <div class="column">
+                                <label for="monocytes">Monocytes (%):</label>
+                                <input type="number" step="0.1" id="monocytes" name="Monocytes   (%)" value="4" required>
+                
+                                <label for="eosinophils">Eosinophils (%):</label>
+                                <input type="number" step="0.1" id="eosinophils" name="Eosinophils   (%)" value="0.5" required>
+                
+                                <label for="basophils">Basophils (%):</label>
+                                <input type="number" step="0.1" id="basophils" name="Basophils  (%)" value="0.5" required>
+                
+                                <label for="plateletCount">Platelet Count (lakhs/mm):</label>
+                                <input type="number" step="0.1" id="plateletCount" name="Platelet Count  (lakhs/mm)" value="1.1" required>
+                
+                                <label for="totalBilirubin">Total Bilirubin (mg/dl):</label>
+                                <input type="number" step="0.1" id="totalBilirubin" name="Total Bilirubin    (mg/dl)" value="3" required>
+                
+                                <label for="direct">Direct (mg/dl):</label>
+                                <input type="number" step="0.1" id="direct" name="Direct    (mg/dl)" value="2" required>
+                
+                                <label for="indirect">Indirect (mg/dl):</label>
+                                <input type="number" step="0.1" id="indirect" name="Indirect     (mg/dl)" value="1" required>
+                
+                                <label for="totalProtein">Total Protein (g/dl):</label>
+                                <input type="number" step="0.1" id="totalProtein" name="Total Protein     (g/dl)" value="5" required>
+                
+                                <label for="albumin">Albumin (g/dl):</label>
+                                <input type="number" step="0.1" id="albumin" name="Albumin   (g/dl)" value="3" required>
+                
+                                <label for="globulin">Globulin (g/dl):</label>
+                                <input type="number" step="0.1" id="globulin" name="Globulin  (g/dl)" value="2" required>
+                
+                                <label for="agRatio">A/G Ratio:</label>
+                                <input type="number" step="0.1" id="agRatio" name="A/G Ratio" value="1.1" required>
+                
+                                <label for="alPhosphatase">AL. Phosphatase (U/L):</label>
+                                <input type="number" id="alPhosphatase" name="AL.Phosphatase      (U/L)" value="96" required>
+                
+                                <label for="sgot">SGOT/AST (U/L):</label>
+                                <input type="number" id="sgot" name="SGOT/AST      (U/L)" value="90" required>
+                
+                                <label for="sgpt">SGPT/ALT (U/L):</label>
+                                <input type="number" id="sgpt" name="SGPT/ALT    (U/L)" value="60" required>
+                
+                                <label for="usgAbdomen">USG Abdomen (diffuse liver or not):</label>
+                                <select id="usgAbdomen" name="USG Abdomen ( diffuse liver or not)" required>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                                
+                                <!-- End Liver Cirrhosis Prediction Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Portfolio</h2>
+          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga eum quidem</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 1</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 2</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="/static/assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+                <div class="portfolio-links">
+                  <a href="/static/assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                  <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in">
+            <img src="/static/assets/img/clients/client-1.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+            <img src="/static/assets/img/clients/client-2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+            <img src="/static/assets/img/clients/client-3.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+            <img src="/static/assets/img/clients/client-4.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="400">
+            <img src="/static/assets/img/clients/client-5.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-2 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="500">
+            <img src="/static/assets/img/clients/client-6.png" class="img-fluid" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Team</h2>
+          <p>Magnam dolores commodi suscipit eius consequatur ex aliquid fuga eum quidem</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in">
+              <div class="member-img">
+                <img src="/static/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in">
+              <div class="member-img">
+                <img src="/static/assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Walter White</h4>
+                <span>Chief Executive Officer</span>
+                <p>Animi est delectus alias quam repellendus nihil nobis dolor. Est sapiente occaecati et dolore. Omnis aut ut nesciunt explicabo qui. Eius nam deleniti ut omnis</p>
+              </div>
+            </div>
+          </div>
+<div>
+</div>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member-img">
+                <img src="/static/assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+                <p>Aspernatur iste esse aliquam enim et corporis. Molestiae voluptatem aut eligendi quis aut. Libero vel amet voluptatem eos rerum non doloremque</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="member-img">
+                <img src="/static/assets/img/team/team-3.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>William Anderson</h4>
+                <span>CTO</span>
+                <p>Ut enim possimus nihil cupiditate beatae. Veniam facere quae non qui necessitatibus rerum eos vero. Maxime sit sunt quo dolor autem est qui quaerat</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <ul class="faq-list">
+
+          <li data-aos="fade-up">
+            <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#faq1">What is liver cirrhosis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Liver cirrhosis is a late stage of scarring (fibrosis) of the liver caused by many forms of liver diseases and conditions, such as hepatitis and chronic alcoholism. It can lead to liver failure.              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="100">
+            <a data-bs-toggle="collapse" data-bs-target="#faq2" class="collapsed">What are the symptoms of liver cirrhosis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Symptoms may include fatigue, weakness, loss of appetite, weight loss, nausea, abdominal pain or swelling, jaundice (yellowing of the skin and eyes), and easy bruising or bleeding.              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="200">
+            <a data-bs-toggle="collapse" data-bs-target="#faq3" class="collapsed">What causes liver cirrhosis?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Liver cirrhosis can be caused by chronic alcohol abuse, viral hepatitis (especially hepatitis B and C), fatty liver disease (non-alcoholic steatohepatitis, or NASH), autoimmune diseases affecting the liver, and certain genetic conditions.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="300">
+            <a data-bs-toggle="collapse" data-bs-target="#faq4" class="collapsed">How is liver cirrhosis diagnosed? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Diagnosis typically involves a combination of medical history review, physical examination, blood tests to assess liver function, imaging studies (such as ultrasound or MRI), and sometimes a liver biopsy to confirm the extent of liver damage.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="400">
+            <a data-bs-toggle="collapse" data-bs-target="#faq5" class="collapsed">Can liver cirrhosis be treated?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                While liver cirrhosis is irreversible, treatment focuses on managing symptoms, preventing further liver damage, and addressing underlying causes. Treatments may include lifestyle changes (such as abstaining from alcohol), medications, and in some cases, liver transplantation.
+              </p>
+            </div>
+          </li>
+
+          <li data-aos="fade-up" data-aos-delay="500">
+            <a data-bs-toggle="collapse" data-bs-target="#faq6" class="collapsed">What lifestyle changes can help manage liver cirrhosis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Lifestyle changes may include maintaining a healthy diet low in sodium and fat, avoiding alcohol and certain medications that can worsen liver damage, getting vaccinated against hepatitis A and B, and regular monitoring of liver function.
+              </p>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Have any doubts, contact us by below details</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="info d-flex flex-column justify-content-center" data-aos="fade-right">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>A108 Adam Street,<br>New York, NY 535022</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@example.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55s</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="/static/forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-left">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
